@@ -1,3 +1,6 @@
+img{
+  width: 100%;
+}
 .articlesList{
   display: flex;
   flex-direction: column;
