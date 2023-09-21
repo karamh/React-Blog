@@ -140,3 +140,7 @@ a{
 .createBtn:hover{
   background-color: rgba(128, 128, 128, 0);
 }
+
+button:focus{
+  background-color: rgba(0, 128, 0, 0.301);
+}
