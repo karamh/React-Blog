@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams  } from 'react-router-dom'
 import 'react-quill/dist/quill.snow.css';
 import ReactQuill from 'react-quill';
 import { modules, ref, getContent, insertContent } from "./editorToolbar";
@@ -24,12 +24,12 @@ function ArticleEditor() {
     async function preview(event){
         const fileInput = document.getElementById('banner');
         const previewImage = document.getElementById('preview');
-        console.log(event.target.files.length);
+        // console.log(event.target.files.length);
         if (event.target.files.length > 0) {
             uploadImage(fileInput.files[0], fileInput.files[0].name).then((res) => {
                 console.log(res)
                 setBannerURL(res);
-                console.log(previewImage.src);
+                // console.log(previewImage.src);
                 previewImage.style.display = 'block';
                 // fileInput.value = null;
             })
