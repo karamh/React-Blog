@@ -26,7 +26,7 @@ function ArticleEditor() {
         const previewImage = document.getElementById('preview');
         console.log(event.target.files.length);
         if (event.target.files.length > 0) {
-            uploadImage(fileInput.files[0], fileInput.name).then((res) => {
+            uploadImage(fileInput.files[0], fileInput.files[0].name).then((res) => {
                 console.log(res)
                 setBannerURL(res);
                 console.log(previewImage.src);
