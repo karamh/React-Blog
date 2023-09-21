@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { readMany } from '../vanilla/readMany'
 import { deleteDocument } from '../vanilla/deleteDocument'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink  } from 'react-router-dom'
 
 function ArticlesList() {
 
@@ -15,7 +15,7 @@ function ArticlesList() {
         const documents = [];
 
         res.forEach((doc) => {
-            console.log(doc[0])
+            // console.log(doc[1].Banner)
             documents.push(
                 
                 <div key={doc[0]} className='article'>
@@ -44,7 +44,6 @@ function ArticlesList() {
         setArticles(documents)
     
       })
-
   },[])
 
   useEffect(() => {
@@ -53,7 +52,7 @@ function ArticlesList() {
       const documents = [];
 
       res.forEach((doc) => {
-          console.log(doc[0])
+          // console.log(doc[1].Banner)
           documents.push(
               
               <div key={doc[0]} className='article'>
