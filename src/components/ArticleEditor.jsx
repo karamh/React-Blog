@@ -6,6 +6,7 @@ import { modules, ref, getContent, insertContent } from "./editorToolbar";
 import { writeDocument } from '../vanilla/writeDocument'
 import { uploadImage } from '../vanilla/uploadImage'
 import { readSingle } from '../vanilla/readSingle'
+import { readMany } from '../vanilla/readMany'
 
 
 function ArticleEditor() {
